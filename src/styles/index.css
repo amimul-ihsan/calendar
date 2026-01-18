@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.container {
+  @apply max-w-5xl mx-auto;
+}
+
+.header {
+  @apply flex justify-center items-center p-4 gap-2;
+}
+
+.btn {
+  @apply bg-green-500 rounded-sm cursor-pointer hover:opacity-80 py-1 px-0.5 mt-1;
+}
+
+.year {
+  @apply text-5xl font-black outline-none field-sizing-content 
+   [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none 
+   [&::-webkit-inner-spin-button]:appearance-none;
+}
+
+.calendar {
+  @apply flex flex-wrap gap-5 justify-center;
+}
+
+.month {
+  @apply bg-gray-700 rounded-md p-3 text-center;
+}
+
+.month-name {
+  @apply font-bold text-xl;
+}
+
+td,
+th {
+  @apply px-1.5 py-0.5 text-gray-400;
+}
+
+.today {
+  @apply bg-green-600 text-white rounded-sm;
+}
